@@ -5,12 +5,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.min.css">
 
-    <title>Sandbox</title>
+    <title>Northgate Eye Center</title>
     <!--
          This is a free Bootstrap template roughly implemented with Bulma:
          https://blackrockdigital.github.io/startbootstrap-business-frontpage/#
     -->
     <style>
+        .my-fa {
+            vertical-align: middle;
+            padding: 3px;
+        }
+
+        .my-card .card-image {
+            padding: 0 20%;
+        }
+
         .my-address {
             margin-bottom: 0.5em;
         }
@@ -37,9 +46,13 @@
             margin-right: 30px;
         }
 
-        .my-hero {
-            background-image: url('http://via.placeholder.com/1920x400');
-            background-repeat: no-repeat;
+        .my-meet {
+            /*background: linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/glasses3.jpeg') no-repeat fixed center center;*/
+            /*background-size: cover;*/
+        }
+
+        .my-hero .my-hero-description {
+            font-size: 1.5em;
         }
 
         .my-spaced-v {
@@ -47,161 +60,272 @@
             margin-bottom: 1em;
         }
 
+        .my-address {
+            font-style: normal;
+        }
+
+        .my-title {
+            margin-bottom: 1em;
+        }
+
+        .my-footer-text {
+            margin-top: 2em;
+        }
+
+        .my-about-img {
+            border-radius: 10px;
+            border: 5px solid white;
+        }
+        .my-services-section {
+            background: lightgray;
+        }
     </style>
 </head>
 <body>
 <nav class="nav is-dark">
     <div class="container">
         <div class="nav-left">
-            <a href="#" class="navbar-item my-navbar-header my-navbar-item is-paddingless"><strong>Start Bulma</strong></a>
+            <a href="#" class="navbar-item my-navbar-header my-navbar-item is-paddingless"><strong>Northgate Eye
+                Center</strong></a>
 
-            <a href="#" class="navbar-item my-navbar-item">About</a>
-            <a href="#" class="navbar-item my-navbar-item">Services</a>
-            <a href="#" class="navbar-item my-navbar-item">Contact</a>
+            <a href="#meet" class="navbar-item my-navbar-item">Meet the Doctor</a>
+            <a href="#services" class="navbar-item my-navbar-item">Our Services</a>
+            <a href="#contact" class="navbar-item my-navbar-item">Contact Us</a>
         </div>
     </div>
 </nav>
-<section class="hero is-light my-hero">
+<section class="hero my-hero has-text-centered">
     <div class="hero-body">
         <div class="container">
-            <h1 class="title">Business Name or Tagline</h1>
+            <h1 class="title is-1">Welcome</h1>
+
+            <div class="">
+                <p class=subtitle>Introduce the visitor to the business using clear, informative text. Use
+                    well-targeted keywords within your sentences to make sure search engines can find the business.</p>
+            </div>
         </div>
     </div>
 </section>
-<section class="section">
+<section class="hero is-dark section my-meet" id="meet">
+    <div class="container">
+
+        <div class="columns is-vcentered">
+            <div class="column is-4">
+                <figure class="image is-square">
+                    <img src="images/card3.jpeg" alt="Dr. Wensi Sun" class="my-about-img">
+                </figure>
+            </div>
+            <div class="column is-8">
+                <h1 class="title is-2">Meet the Doctor</h1>
+
+                <p class="my-spaced-v">
+                    Dr. Wensi Sun graduated from the Nanjing Coll of Trad Chinese Med, Nanjing, Jiangsu, China in 1983.
+                    He works in Bellevue, WA and 2 other locations and specializes in Ophthalmology. Dr. Sun is
+                    affiliated with Northwest Hospital & Medical Center, Overlake Hospital Medical Center and Swedish
+                    Edmonds Hospital.
+                </p>
+                <a href="http://doctor.webmd.com/doctor/wensi-sun-md-0d74b496-a50a-45eb-b187-e3addb639c98-overview"
+                   target="_blank"
+                   class="button is-medium my-spaced-v is-outlined">View WebMD</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="section my-services-section" id="services">
+    <div class="container">
+        <div class="has-text-centered my-spaced-v">
+            <p class="title is-1 my-title">Our Services</p>
+        </div>
+        <div class="columns">
+            <div class="column my-spaced-h">
+                <div class="card my-card">
+                    <div class="card-image">
+                        <figure class="image is-square">
+                            <img class="my-image-circle" src="images/card1.jpeg" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title">Eye Exams</p>
+                        <p class="sub-title">
+                            These marketing boxes are a great place to put some information. These can contain summaries
+                            of what the company does, promotional information, or anything else that is relevant to the
+                            company. These will usually be below-the-fold.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column my-spaced-h">
+                <div class="card my-card">
+                    <div class="card-image">
+                        <figure class="image is-square">
+                            <img class="my-image-circle" src="images/card2.jpeg" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title">Contact Lenses</p>
+                        <p class="sub-title">
+                            These marketing boxes are a great place to put some information. These can contain summaries
+                            of what the company does, promotional information, or anything else that is relevant to the
+                            company. These will usually be below-the-fold.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card my-card">
+                    <div class="card-image">
+                        <figure class="image is-square">
+                            <img class="my-image-circle" src="images/card3.jpeg" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title">Surgery</p>
+                        <p class="sub-title">
+                            These marketing boxes are a great place to put some information. These can contain summaries
+                            of what the company does, promotional information, or anything else that is relevant to the
+                            company. These will usually be below-the-fold.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section is-light" id="contact">
+    <section class="container">
+        <div class="columns">
+            <div class="column is-two-thirds">
+
+                <p class="title is-2">Contact Us</p>
+
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input type="text" class="input " placeholder="Name" required>
+                    </p>
+                </div>
+                <div class="field is-grouped">
+                    <p class="control">
+                        <input type="tel" class="input " placeholder="Phone Number">
+                    </p>
+                    <p class="control is-expanded">
+                        <input type="email" class="input " placeholder="Email" required>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control">
+                        <textarea placeholder="Your Message" class="textarea "></textarea>
+                    </p>
+                </div>
+                <button class="button is-primary">Send message</button>
+
+            </div>
+            <!-- end form -->
+
+
+            <div class="column">
+                <p class="title is-2">Location</p>
+
+                <p class="my-spaced-v">
+                    <strong><span class="fa fa-clock-o my-fa"></span> Business Hours:</strong>
+                    <br>
+                    Mon - Fri: 8:00 AM - 5:00 PM
+                </p>
+
+                <address class="my-address">
+                    <strong><span class="fa fa-building-o my-fa"></span> Address:</strong>
+                    <br>
+                    11231 Roosevelt Way NE
+                    <br>
+                    Seattle, WA 98125
+                    <br>
+                    <a href="https://goo.gl/maps/a8d9HmXzprm" target="_blank">Directions</a>
+                </address>
+
+                <p class="my-spaced-v">
+                    <strong><span class="fa fa-phone my-fa"></span> Phone:</strong>
+                    <br>
+                    (206) 365-5800
+                    <br>
+                    <em>Please book appointments by phone call</em>
+                    <!--E-mail: <a href="mailto:#">name@example.com</a>-->
+                </p>
+
+            </div>
+        </div>
+    </section>
+</section>
+<!--<section class="section">
     <div class="container">
         <div class="columns">
             <div class="column is-two-thirds">
-                <h1 class="title">What We Do</h1>
-                <p class="my-spaced-v">Introduce the visitor to the business using clear, informative text. Use
-                    well-targeted keywords within your sentences to make sure search engines can find the business.</p>
-                <p class="my-spaced-v">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique
-                    eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt
-                    accusantium illo iste exercitationem nemo voluptates asperiores.</p>
-                <p class="my-spaced-v">
-                    <button class="button is-large">Call to Action ></button>
-                </p>
-            </div>
-            <div class="column">
-                <h1 class="title">Contact Us</h1>
-                <address class="my-address">
-                    <strong>Start Bulma</strong>
-                    <br>
-                    123 Internet Street,
-                    <br>
-                    Los Angeles, CA 123456
-                </address>
-                <address class="my-address">
-                    <abbr title="Phone">P:</abbr>(123) 456-7890
-                    <br>
-                    <abbr title="Email">E:</abbr> <a href="mailto:#">name@example.com</a>
-                </address>
-            </div>
-        </div>
 
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-        <div class="columns">
-            <div class="column my-spaced-h">
-                <div class="card my-card">
-                    <div class="card-image">
-                        <figure class="image is-square">
-                            <img class="my-image-circle" src="http://via.placeholder.com/300x300" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4">Marketing Box #1</p>
-                        <p class="sub-title">
-                            These marketing boxes are a great place to put some information. These can contain summaries
-                            of what the company does, promotional information, or anything else that is relevant to the
-                            company. These will usually be below-the-fold.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="column my-spaced-h">
-                <div class="card my-card">
-                    <div class="card-image">
-                        <figure class="image is-square">
-                            <img class="my-image-circle" src="http://via.placeholder.com/300x300" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4">Marketing Box #2</p>
-                        <p class="sub-title">
-                            These marketing boxes are a great place to put some information. These can contain summaries
-                            of what the company does, promotional information, or anything else that is relevant to the
-                            company. These will usually be below-the-fold.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card my-card">
-                    <div class="card-image">
-                        <figure class="image is-square">
-                            <img class="my-image-circle" src="http://via.placeholder.com/300x300" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <p class="title is-4">Marketing Box #3</p>
-                        <p class="sub-title">
-                            These marketing boxes are a great place to put some information. These can contain summaries
-                            of what the company does, promotional information, or anything else that is relevant to the
-                            company. These will usually be below-the-fold.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-        <p class="title has-text-centered">Contact Us</p>
-        <div class="columns">
-            <div class="column">
+                <p class="title is-2">Contact Us</p>
+
                 <div class="field is-grouped">
                     <p class="control is-expanded">
-                        <input type="text" class="input is-medium" placeholder="First Name" required>
-                    </p>
-                    <p class="control is-expanded">
-                        <input type="text" class="input is-medium" placeholder="Last Name">
+                        <input type="text" class="input " placeholder="Name" required>
                     </p>
                 </div>
-                <div class="field">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <input type="tel" class="input " placeholder="Phone Number">
+                    </p>
                     <p class="control is-expanded">
-                        <input type="email" class="input is-medium" placeholder="Email" required>
+                        <input type="email" class="input " placeholder="Email" required>
                     </p>
                 </div>
-                <div class="field">
-                    <p class="control is-expanded">
-                        <input type="tel" class="input is-medium" placeholder="Phone Number">
-                    </p>
-                </div>
-            </div>
-            <div class="column">
                 <div class="field">
                     <p class="control">
-                        <textarea placeholder="Your Message" class="textarea is-medium"></textarea>
+                        <textarea placeholder="Your Message" class="textarea "></textarea>
                     </p>
                 </div>
+                <button class="button is-primary">Send message</button>
+
+            </div>
+            &lt;!&ndash; end form &ndash;&gt;
+
+
+            <div class="column">
+                <p class="title is-2">Location</p>
+
+                <p class="my-spaced-v">
+                    <strong><span class="fa fa-clock-o my-fa"></span> Business Hours:</strong>
+                    <br>
+                    Mon - Fri: 8:00 AM - 5:00 PM
+                </p>
+
+                <address class="my-address">
+                    <strong><span class="fa fa-building-o my-fa"></span> Address:</strong>
+                    <br>
+                    11231 Roosevelt Way NE
+                    <br>
+                    Seattle, WA 98125
+                    <br>
+                    <a href="https://goo.gl/maps/a8d9HmXzprm" target="_blank">Directions</a>
+                </address>
+
+                <p class="my-spaced-v">
+                    <strong><span class="fa fa-phone my-fa"></span> Phone:</strong>
+                    <br>
+                    (206) 365-5800
+                    &lt;!&ndash;E-mail: <a href="mailto:#">name@example.com</a>&ndash;&gt;
+                </p>
+
             </div>
         </div>
+
     </div>
     <div class="columns">
-        <div class="column has-text-centered">
-            <button class="button is-large is-primary">Send message</button>
-        </div>
     </div>
 
-</section>
+</section>-->
 <footer class="footer">
     <div class="container">
         <div class="content has-text-left">
-            <p>Copyright 20XX. Bulma overview.</p>
+            <p class="has-text-centered my-footer-text">
+                <em>Northgate Eye Center - All rights reserved.</em>
+            </p>
         </div>
     </div>
 </footer>
