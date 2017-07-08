@@ -1,0 +1,80 @@
+body {
+    font-size: 1.2rem;
+}
+
+.nav .nav-item a:not(.button), .nav a.nav-item:not(.button) {
+    color: white;
+}
+.my-navbar-item {
+}
+
+.my-navbar-brand {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.my-fa {
+    vertical-align: middle;
+    padding: 3px;
+}
+
+.my-card .card-image {
+    padding: 0 20%;
+}
+
+.my-address {
+    margin-bottom: 0.5em;
+}
+
+.my-navbar-header {
+    font-size: 1.2em;
+}
+
+.my-card {
+    box-shadow: none;
+}
+
+.my-image-circle {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.my-spaced-h {
+    margin-right: 30px;
+}
+
+
+.my-hero-subtitle {
+    font-size: 1.2em;
+}
+.my-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('images/glasses2.jpeg') no-repeat no-repeat center center;
+    background-size: cover;
+}
+
+.my-hero .my-hero-description {
+    font-size: 1.5em;
+}
+
+.my-spaced-v {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.my-address {
+    font-style: normal;
+}
+
+.my-title {
+    margin-bottom: 1em;
+}
+
+.my-footer-text {
+    margin-top: 2em;
+}
+
+.my-about-img {
+    border-radius: 10px;
+    border: 5px solid white;
+}
+

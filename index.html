@@ -4,110 +4,39 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.min.css">
+    <link rel="stylesheet" href="foundation-bulmaswatch.min.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Northgate Eye Center</title>
-    <!--
-         This is a free Bootstrap template roughly implemented with Bulma:
-         https://blackrockdigital.github.io/startbootstrap-business-frontpage/#
-    -->
-    <style>
-        .my-fa {
-            vertical-align: middle;
-            padding: 3px;
-        }
-
-        .my-card .card-image {
-            padding: 0 20%;
-        }
-
-        .my-address {
-            margin-bottom: 0.5em;
-        }
-
-        .my-navbar-header {
-            font-size: 1.2em;
-        }
-
-        a.my-navbar-item:hover {
-            background: none;
-        }
-
-        .my-card {
-            box-shadow: none;
-        }
-
-        .my-image-circle {
-            border-radius: 50%;
-            width: 300px;
-            height: 300px;
-        }
-
-        .my-spaced-h {
-            margin-right: 30px;
-        }
-
-        .my-meet {
-            /*background: linear-gradient(rgba(25, 181, 254, 0.6), rgba(246, 36, 89, 0.6)), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/glasses3.jpeg') no-repeat fixed center center;*/
-            /*background-size: cover;*/
-        }
-
-        .my-hero .my-hero-description {
-            font-size: 1.5em;
-        }
-
-        .my-spaced-v {
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
-
-        .my-address {
-            font-style: normal;
-        }
-
-        .my-title {
-            margin-bottom: 1em;
-        }
-
-        .my-footer-text {
-            margin-top: 2em;
-        }
-
-        .my-about-img {
-            border-radius: 10px;
-            border: 5px solid white;
-        }
-        .my-services-section {
-            background: lightgray;
-        }
-    </style>
 </head>
 <body>
-<nav class="nav is-dark">
+<nav class="nav has-shadow">
     <div class="container">
         <div class="nav-left">
-            <a href="#" class="navbar-item my-navbar-header my-navbar-item is-paddingless"><strong>Northgate Eye
-                Center</strong></a>
-
-            <a href="#meet" class="navbar-item my-navbar-item">Meet the Doctor</a>
-            <a href="#services" class="navbar-item my-navbar-item">Our Services</a>
-            <a href="#contact" class="navbar-item my-navbar-item">Contact Us</a>
+            <a href="#" class="my-navbar-brand navbar-item my-navbar-item nav-item"><span class="fa fa-eye"></span>&nbsp;Northgate
+                Eye Center</a>
+        </div>
+        <div class="nav-right">
+            <a href="#meet" class="navbar-item nav-item my-navbar-item">Meet the Doctor</a>
+            <a href="#services" class="navbar-item nav-item my-navbar-item">Our Services</a>
+            <a href="#contact" class="navbar-item nav-item my-navbar-item">Contact</a>
         </div>
     </div>
 </nav>
-<section class="hero my-hero has-text-centered">
+<section class="hero is-medium is-dark my-hero has-text-centered">
     <div class="hero-body">
         <div class="container">
-            <h1 class="title is-1">Welcome</h1>
+            <h1 class="title is-1">Northgate Eye Center</h1>
 
             <div class="">
-                <p class=subtitle>Introduce the visitor to the business using clear, informative text. Use
+                <p class="my-hero-subtitle subtitle">Introduce the visitor to the business using clear, informative text. Use
                     well-targeted keywords within your sentences to make sure search engines can find the business.</p>
             </div>
         </div>
     </div>
 </section>
-<section class="hero is-dark section my-meet" id="meet">
-    <div class="container">
+<section class="hero is-light is-bold section my-meet" id="meet">
+    <div class="container content">
 
         <div class="columns is-vcentered">
             <div class="column is-4">
@@ -126,15 +55,15 @@
                 </p>
                 <a href="http://doctor.webmd.com/doctor/wensi-sun-md-0d74b496-a50a-45eb-b187-e3addb639c98-overview"
                    target="_blank"
-                   class="button is-medium my-spaced-v is-outlined">View WebMD</a>
+                   class="button my-spaced-v is-primary">View WebMD</a>
             </div>
         </div>
 
     </div>
 </section>
-<section class="section my-services-section" id="services">
+<section class="section has-text-centered my-services-section" id="services">
     <div class="container">
-        <div class="has-text-centered my-spaced-v">
+        <div class=" my-spaced-v">
             <p class="title is-1 my-title">Our Services</p>
         </div>
         <div class="columns">
@@ -192,12 +121,12 @@
         </div>
     </div>
 </section>
-<section class="section is-light" id="contact">
-    <section class="container">
-        <div class="columns">
+<footer class="footer">
+    <div class="container">
+        <div class="columns" id="contact">
             <div class="column is-two-thirds">
 
-                <p class="title is-2">Contact Us</p>
+                <p class="title is-2">Leave a Message</p>
 
                 <div class="field is-grouped">
                     <p class="control is-expanded">
@@ -224,7 +153,7 @@
 
 
             <div class="column">
-                <p class="title is-2">Location</p>
+                <p class="title is-2">Contact</p>
 
                 <p class="my-spaced-v">
                     <strong><span class="fa fa-clock-o my-fa"></span> Business Hours:</strong>
@@ -253,81 +182,10 @@
 
             </div>
         </div>
-    </section>
-</section>
-<!--<section class="section">
-    <div class="container">
-        <div class="columns">
-            <div class="column is-two-thirds">
-
-                <p class="title is-2">Contact Us</p>
-
-                <div class="field is-grouped">
-                    <p class="control is-expanded">
-                        <input type="text" class="input " placeholder="Name" required>
-                    </p>
-                </div>
-                <div class="field is-grouped">
-                    <p class="control">
-                        <input type="tel" class="input " placeholder="Phone Number">
-                    </p>
-                    <p class="control is-expanded">
-                        <input type="email" class="input " placeholder="Email" required>
-                    </p>
-                </div>
-                <div class="field">
-                    <p class="control">
-                        <textarea placeholder="Your Message" class="textarea "></textarea>
-                    </p>
-                </div>
-                <button class="button is-primary">Send message</button>
-
-            </div>
-            &lt;!&ndash; end form &ndash;&gt;
-
-
-            <div class="column">
-                <p class="title is-2">Location</p>
-
-                <p class="my-spaced-v">
-                    <strong><span class="fa fa-clock-o my-fa"></span> Business Hours:</strong>
-                    <br>
-                    Mon - Fri: 8:00 AM - 5:00 PM
-                </p>
-
-                <address class="my-address">
-                    <strong><span class="fa fa-building-o my-fa"></span> Address:</strong>
-                    <br>
-                    11231 Roosevelt Way NE
-                    <br>
-                    Seattle, WA 98125
-                    <br>
-                    <a href="https://goo.gl/maps/a8d9HmXzprm" target="_blank">Directions</a>
-                </address>
-
-                <p class="my-spaced-v">
-                    <strong><span class="fa fa-phone my-fa"></span> Phone:</strong>
-                    <br>
-                    (206) 365-5800
-                    &lt;!&ndash;E-mail: <a href="mailto:#">name@example.com</a>&ndash;&gt;
-                </p>
-
-            </div>
-        </div>
-
     </div>
-    <div class="columns">
-    </div>
-
-</section>-->
-<footer class="footer">
-    <div class="container">
-        <div class="content has-text-left">
-            <p class="has-text-centered my-footer-text">
-                <em>Northgate Eye Center - All rights reserved.</em>
-            </p>
-        </div>
-    </div>
+    <p class="has-text-centered my-footer-text">
+        <em>Northgate Eye Center - All rights reserved.</em>
+    </p>
 </footer>
 </body>
 </html>
